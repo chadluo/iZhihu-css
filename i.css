@@ -89,14 +89,17 @@ html.no-touch .zm-item:hover .zu-autohide {
 .skilled-topics .item, .expert-item-moving {
     padding: 10px!important;
 }
-.skilled-topics .item .avatar, .expert-item-moving .avatar {
+.zm-item-img-avatar, .avatar {
     border: none!important;
     padding: 0!important;
+}
+.zm-item-link-avatar {
+    padding-right: 8px!important;
 }
 
 /**
  * zhuanlan
- */ 
+ */
 .item-with-title-img header {
     padding: 248px 0 0!important;
 }
