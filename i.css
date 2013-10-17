@@ -26,6 +26,7 @@
     .zu-main-feed-con
     ,.feed-item
     ,.zm-item
+    ,.zm-profile-section-item
     ,.zm-item-answer {
         border: none!important
     }
@@ -37,10 +38,17 @@
     .feed-item + .feed-item
     ,#zh-list-answer-wrap .zm-item + .zm-item
     ,#zh-profile-activity-page-list .zm-item + .zm-item
+    ,.zh-general-list .zm-item + .zm-item
     ,.zm-item-answer + .zm-item-answer {
         margin-top: 35px!important;
     }
     .combine + .combine { margin-top: 10px!important }
+    .feed-separator { margin: 20px 0 43px!important }
+    .zh-question-answer-wrapper {
+        margin: 40px 0;
+        border: 0!important;
+    }
+    .zu-question-collap-title { border: none!important; }
 
     .feed-item .avatar
     , .time {
