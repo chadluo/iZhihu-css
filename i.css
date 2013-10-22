@@ -17,6 +17,7 @@
     }
     
     /* ==== top ==== */
+    
     .zu-top {
         background-image: linear-gradient(top, rgb(8,115,223) 0%, rgb(7,101,196) 100%)!important;
         background-image: -o-linear-gradient(top, rgb(8,115,223) 0%, rgb(7,101,196) 100%)!important;
@@ -44,6 +45,8 @@
     /* ======== feed ======== */
     
     .zh-main-feed-fresh-button { margin-bottom: 20px!important }
+    
+    .feed-separator { margin: 15px 0 38px!important }
     
     .feed-item {
         border: none!important;
