@@ -1,3 +1,3 @@
 # usage
 * with stylish, or
-* with iZhihu
+* with [iZhihu](https://github.com/unogz/izhihu)
