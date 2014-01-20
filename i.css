@@ -2,120 +2,123 @@
 
 @-moz-document domain("zhihu.com") {
     
-    a:not(.zu-main-feed-fresh-button):focus {
-        outline: none!important;
-        animation: a-focus .5s;
-        -webkit-animation: a-focus .5s;
-    }
-    @keyframes a-focus {
-        from { background: rgba(255,255,0,0.8) }
-        to { background: transparent }
-    }
-    @-webkit-keyframes a-focus {
-        from { background: rgba(255,255,0,0.8) }
-        to { background: transparent }
-    }
-    
-    /* ==== top ==== */
+    /* ==== header ==== */
     
     .zu-top {
-        background-image: linear-gradient(top, rgb(8,115,223) 0%, rgb(7,101,196) 100%)!important;
-        background-image: -o-linear-gradient(top, rgb(8,115,223) 0%, rgb(7,101,196) 100%)!important;
-        background-image: -moz-linear-gradient(top, rgb(8,115,223) 0%, rgb(7,101,196) 100%)!important;
-        background-image: -webkit-linear-gradient(top, rgb(8,115,223) 0%, rgb(7,101,196) 100%)!important;
-        background-image: -ms-linear-gradient(top, rgb(8,115,223) 0%, rgb(7,101,196) 100%)!important;
-        
-        background-image: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            color-stop(0, rgb(8,115,223)),
-                                           color-stop(1, rgb(7,101,196))
-        )!important;
+        /*
+         *   background: #763568!important;
+         */
+    }
+    
+    #zh-top-inner {
+    width: 95%!important;
     }
     
     .zu-top-nav {
         float: right!important;
-        margin-right: 130px;
+        margin-right: 140px!important;
     }
     
-    .zu-main-feed-con { border: none!important }
-    .zu-main-content-inner { margin-right: 350px!important }
+    /* ---- feed ---- */
     
-    /* ======== feed ======== */
+    .zu-main-content-inner {
+        margin-right: 376px!important;
+    }
     
-    .zh-main-feed-fresh-button { margin-bottom: 20px!important }
-    
-    .feed-separator { margin: 15px 0 38px!important }
+    .zu-main-feed-fresh-button {
+        margin: 0 0 24px!important;
+    }
     
     .feed-item {
-        border: none!important;
         padding: 0!important;
     }
     
     .feed-item + .feed-item {
-        margin-top: 35px
+        margin-top: 24px;
     }
     
-    .feed-item > .feed-main {
-        margin-left: 0!important;
-        padding-right: 25px;
-    }
-    
-    .feed-item .content h2 { margin-right: 0!important }
-    
-    .entry-body {
-        margin-left: 48px;
-    }
-    
-    .ignore {
-        top: 0!important;
-        right: 0!important;
-    }
-    
-    .feed-item > .avatar
-    ,.source .time {
+    .feed-item .avatar,
+    .feed-item .time {
         display: none!important;
     }
     
-    /* ======== question ======== */
-    
-    .zh-answers-title,.zh-question-answer-wrapper { border: none!important }
-    
-    .zh-question-answer-wrapper > .zm-item-answer {
-        margin: 10px 0 35px 0!important;
-        border: none!important
+    .feed-item .ignore {
+        margin-top: -25px!important;
     }
     
-    .zm-item-answer .zm-item-rich-text {
-        padding-right: 35px
+    .feed-main {
+        margin-left: 0!important;
     }
     
-    /* ======== people ======== */
-    
-    .zu-main-content-inner > div { border-radius: 0!important }
-    
-    .skilled-topics .item, .expert-item-moving {
-        width: 268px!important
-    }
-    
-    .zm-profile-section-item { border: none!important }
-    
-    /* ==== sidebar ==== */
-    
-    .zu-small-avatar-list > .zm-item-link-avatar
-    ,.zm-profile-side-columns .link
-    ,.zm-profile-side-topics .link {
+    .zh-general-list h2 {
         margin: 0!important;
     }
     
-    .zh-question-followers-sidebar > .list .zm-item-img-avatar
-    ,.zm-profile-side-same-friends .zm-item-link-avatar img
-    ,.zm-profile-side-columns .link
-    ,.zm-profile-side-topics .link
-    ,.zm-profile-side-columns .avatar
-    ,.zm-profile-side-topics .avatar {
+    .zh-general-list .entry-body {
+        margin:6px 0 0 48px!important;
+    }
+    
+    .feed-separator {
+        margin: 20px 0 43px!important;
+    }
+    
+    /* ---- question ---- */
+    
+    .zm-item-answer + .zm-item-answer {
+        margin-top: 24px;
+    }
+    
+    /* ---- people ---- */
+    
+    .zu-main-content-inner > div {
         border-radius: 0!important;
     }
+    
+    .skilled-topics .item {
+        padding: 12px !important;
+    }
+    
+    .skilled-topics .item, .expert-item-moving {
+        width: 251px!important;
+    }
+    
+    .zm-profile-section-item {
+        border: none!important
+    }
+    
+    #zh-profile-answer-list h2 {
+    margin-right: 20px!important;
+    }
+    
+    /* ---- general ---- */
+    
+    a {
+        outline: none!important;
+    }
+    
+    .zm-item-link-avatar,
+    .zh-question-followers-sidebar > .list .zm-item-img-avatar,
+    .zm-profile-side-columns .link,
+    .zm-profile-side-topics .link,
+    .zm-profile-side-columns .avatar,
+    .zm-profile-side-topics .avatar {
+        margin: 0!important;
+        border-radius: 0!important;
+    }
+    
+    .popover-content {
+        box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+    
+    /* remove border */
+    
+    .zu-main-feed-con,
+    .feed-item,
+    .zm-item-answer,
+    .zh-question-answer-wrapper,
+    .zh-answers-title {
+        border: none!important;
+    }
+    
     
 }
